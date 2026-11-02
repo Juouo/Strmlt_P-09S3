@@ -1,0 +1,55 @@
+=== Membangun koleksi ===
+  pedoman_500: ukuran 500, overlap 75 -> 68 chunk
+  pedoman_1000: ukuran 1000, overlap 150 -> 35 chunk
+
+=== HASIL: Hit@k (dan MRR dari modul bagian 7) ===
+koleksi           ukuran   Hit@1   Hit@3   Hit@5    MRR@5
+pedoman_500          500    0.60    0.73    0.73    0.667
+pedoman_1000        1000    0.33    0.60    0.73    0.489
+
+=== Pertanyaan yang gagal masuk top-5 (bahan kesimpulan) ===
+
+[pedoman_500]
+  - Prestasi dari seluruh semester yang telah ditempuh disebut apa?
+    kunci: seluruh semester yang telah ditempuh
+    top-1 yang terambil: 't setiap komponen ditetapkan oleh pengampu mata kuliah dan diinformasikan pada\nawal perkuliahan.\n4.1 Indeks Prestasi Semester dan Kumulatif\nIndeks Pre' ...
+  - Apa yang perlu dipastikan mahasiswa sebelum melakukan pengisian KRS?
+    kunci: status administrasi telah aktif
+    top-1 yang terambil: 'i kegiatan pendidikan\npada semester tertentu. Sebelum perkuliahan dimulai, mahasiswa perlu memastikan status\nadministrasi telah aktif. Status yang bel' ...
+  - Bagaimana kata sandi yang disarankan untuk akun akademik?
+    kunci: kata sandi unik
+    top-1 yang terambil: 'n. Pesan kepada petugas sebaiknya\nmencantumkan tujuan, identitas seperlunya, nomor pengajuan jika ada, serta uraian kendala. Hindari\nmengirim kata san' ...
+  - Dokumen apa yang mendukung permohonan mahasiswa untuk magang?
+    kunci: Surat pengantar magang
+    top-1 yang terambil: 'ar prosedur, tabel ringkasan, dan istilah penting\nCatatan penggunaan: Dokumen ini merupakan bahan simulasi untuk keperluan\npembelajaran dan pengujian' ...
+
+[pedoman_1000]
+  - Prestasi dari seluruh semester yang telah ditempuh disebut apa?
+    kunci: seluruh semester yang telah ditempuh
+    top-1 yang terambil: 't setiap komponen ditetapkan oleh pengampu mata kuliah dan diinformasikan pada\nawal perkuliahan.\n4.1 Indeks Prestasi Semester dan Kumulatif\nIndeks Pre' ...
+  - Apa yang perlu dipastikan mahasiswa sebelum melakukan pengisian KRS?
+    kunci: status administrasi telah aktif
+    top-1 yang terambil: 'KRS dilakukan melalui sistem akademik pada periode yang telah ditentukan. Mahasiswa perlu\nmemeriksa nama mata kuliah, kode, kelas, jumlah SKS, jadwal,' ...
+  - Apa kegunaan Kartu Hasil Studi atau KHS?
+    kunci: Melihat nilai mata kuliah per
+    top-1 yang terambil: 'h\n \nsistem\n \ndapat\n \nmenemukan\n \ninformasi\n \nyang\n \nrelevan,\n \ntermasuk\n \npertanyaan\n \nyang\n \nmenggunakan\n \nkata-kata\n \nberbeda\n \ndari\n \ndokumen.\n \nLa' ...
+  - Bagaimana kata sandi yang disarankan untuk akun akademik?
+    kunci: kata sandi unik
+    top-1 yang terambil: 'n. Pesan kepada petugas sebaiknya\nmencantumkan tujuan, identitas seperlunya, nomor pengajuan jika ada, serta uraian kendala. Hindari\nmengirim kata san' ...
+
+=== Pertanyaan yang hasilnya beda antara pedoman_500 dan pedoman_1000 ===
+  - Apa batas minimal kehadiran agar mahasiswa dapat mengikuti ujian akhir semester?  | pedoman_500: peringkat 1  | pedoman_1000: peringkat 3
+  - Apa kepanjangan KRS dalam sistem akademik mahasiswa?  | pedoman_500: peringkat 1  | pedoman_1000: peringkat 2
+  - Dokumen apa yang perlu diisi saat mengajukan cuti akademik?  | pedoman_500: peringkat 2  | pedoman_1000: peringkat 4
+  - Apa kegunaan Kartu Hasil Studi atau KHS?  | pedoman_500: peringkat 1  | pedoman_1000: peringkat None
+  - Apa yang perlu diperiksa sebelum memasukkan informasi login pada sebuah situs?  | pedoman_500: peringkat 1  | pedoman_1000: peringkat 4
+  - Dokumen apa yang mendukung permohonan mahasiswa untuk magang?  | pedoman_500: peringkat None  | pedoman_1000: peringkat 2
+
+=== LANGKAH 3: kerangka kesimpulan (isi sendiri dari angka di atas, 3-4 kalimat) ===
+1. Ukuran chunk ___ memberi Hit@3 = ___ dibanding ___ untuk ukuran ___.
+2. Pertanyaan yang gagal: ___ (sebut pertanyaan dan koleksinya).
+3. Dugaan penyebab: ___ (misalnya chunk kecil memisahkan jawaban dari penjelasannya,
+   chunk besar mencampur banyak topik, kata kunci ada di chunk tetapi bukan jawabannya,
+   atau pertanyaan memakai istilah berbeda dari dokumen).
+4. Keterbatasan: evaluasi mencocokkan kata kunci, jadi chunk yang memuat kata kunci
+   belum tentu benar-benar menjawab. Periksa sebagian hasil secara manual.

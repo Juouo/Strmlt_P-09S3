@@ -1,0 +1,75 @@
+=== LANGKAH 1: Indexing ===
+Mode pencarian: ChromaDB + SentenceTransformer
+01_Panduan_Akademik_Mahasiswa.pdf -> 12 chunk
+02_Panduan_Kehadiran_dan_Ujian.pdf -> 10 chunk
+03_Panduan_Administrasi_Etika_Digital.pdf -> 11 chunk
+P-10.pdf -> 9 chunk
+Total isi koleksi 'pedoman': 42 chunk
+
+=== LANGKAH 2: 5 pertanyaan biasa ===
+
+[1] Pertanyaan: Apa syarat pengajuan cuti akademik?
+  Kata kunci: cuti akademik, dua semester aktif, formulir, dosen wali, program studi
+  #1 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 7] jarak=0.194
+     i Tidak mengikuti perkuliahan reguler pada semester cuti 3.2 Hal yang perlu diperhatikan ●  Cuti harus memperoleh persetujuan tertulis; tidak cukup hanya dengan tidak hadir kuliah. ●  Mahasiswa perlu memeriksa dampak cuti terhadap masa studi dan jadwal kelulusan. ●  Hak akses tertentu pada sistem ak ...
+  #2 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 6] jarak=0.265
+     lam dokumen ini, mahasiswa dapat mengajukan cuti setelah menyelesaikan sekurang-kurangnya dua semester aktif. Pengajuan disampaikan sebelum batas waktu registrasi semester yang bersangkutan. Mahasiswa mengisi formulir, menyertakan alasan, melampirkan dokumen pendukung apabila diperlukan, dan mempero ...
+  #3 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 5] jarak=0.315
+     h sesuai kebutuhan Konsultasi Membahas beban studi dengan dosen wali Rencana studi lebih terarah Pengajuan Mengirim perubahan melalui sistem Permohonan tercatat Konfirmasi Memeriksa status persetujuan KRS akhir tersimpan 3. Cuti Akademik dan Status Studi Cuti akademik adalah izin resmi bagi mahasisw ...
+
+[2] Pertanyaan: Dalam skenario dokumen, berapa minimal 75% kehadiran dari pertemuan terjadwal untuk mengikuti ujian akhir semester?
+  Kata kunci: kehadiran, 75 persen, ujian akhir semester, pertemuan terjadwal
+  #1 [02_Panduan_Kehadiran_dan_Ujian.pdf · chunk 2] jarak=0.250
+     ian akhir semester. Ketentuan ini digunakan sebagai contoh pengujian pencarian informasi dan bukan kebijakan resmi universitas. Mahasiswa yang kehadirannya di bawah batas tersebut perlu menghubungi dosen pengampu dan bagian akademik untuk mengetahui tindak lanjut yang berlaku. Jumlah pertemuan Minim ...
+  #2 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 6] jarak=0.345
+     lam dokumen ini, mahasiswa dapat mengajukan cuti setelah menyelesaikan sekurang-kurangnya dua semester aktif. Pengajuan disampaikan sebelum batas waktu registrasi semester yang bersangkutan. Mahasiswa mengisi formulir, menyertakan alasan, melampirkan dokumen pendukung apabila diperlukan, dan mempero ...
+  #3 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 7] jarak=0.386
+     i Tidak mengikuti perkuliahan reguler pada semester cuti 3.2 Hal yang perlu diperhatikan ●  Cuti harus memperoleh persetujuan tertulis; tidak cukup hanya dengan tidak hadir kuliah. ●  Mahasiswa perlu memeriksa dampak cuti terhadap masa studi dan jadwal kelulusan. ●  Hak akses tertentu pada sistem ak ...
+
+[3] Pertanyaan: Apa perbedaan Indeks Prestasi Semester (IPS) dan Indeks Prestasi Kumulatif (IPK)?
+  Kata kunci: IPS, IPK, SKS, evaluasi hasil belajar
+  #1 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 9] jarak=0.346
+     ya digunakan sebagai bahan evaluasi, tetapi tidak menggantikan penilaian terhadap keterampilan, kedisiplinan, dan kemampuan bekerja sama. Istilah Pengertian Contoh penggunaan IPS Rata-rata nilai berbobot SKS dalam satu semester Evaluasi hasil belajar semester berjalan IPK Rata-rata nilai berbobot SK ...
+  #2 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 11] jarak=0.352
+     mengikuti kegiatan akademik. Prasyarat Mata kuliah atau ketentuan yang harus dipenuhi sebelum mengambil mata kuliah tertentu. IPS Indeks prestasi yang dihitung untuk satu semester. IPK Indeks prestasi yang dihitung secara kumulatif. Kesimpulannya, pengelolaan studi yang baik dimulai dari pemahaman t ...
+  #3 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 8] jarak=0.426
+     rlaku. Mengabaikan proses administrasi dapat menyebabkan status akademik tidak sesuai dengan kondisi sebenarnya. 4. Evaluasi Hasil Belajar Evaluasi hasil belajar digunakan untuk mengetahui pencapaian kompetensi mahasiswa. Penilaian dapat mencakup tugas individu, proyek kelompok, kuis, praktikum, uji ...
+
+[4] Pertanyaan: Apa kegunaan Kartu Hasil Studi (KHS) untuk melihat nilai mata kuliah per semester?
+  Kata kunci: Kartu Hasil Studi (KHS), nilai mata kuliah, semester
+  #1 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 9] jarak=0.301
+     ya digunakan sebagai bahan evaluasi, tetapi tidak menggantikan penilaian terhadap keterampilan, kedisiplinan, dan kemampuan bekerja sama. Istilah Pengertian Contoh penggunaan IPS Rata-rata nilai berbobot SKS dalam satu semester Evaluasi hasil belajar semester berjalan IPK Rata-rata nilai berbobot SK ...
+  #2 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 3] jarak=0.352
+     pelajar, atau administrasi lainnya. Jenis dokumen yang tersedia bergantung pada kebijakan institusi. Permohonan harus disampaikan dengan memperhatikan waktu pemrosesan. Jenis dokumen Kegunaan umum Informasi yang perlu diperiksa Kartu Hasil Studi (KHS) Melihat nilai mata kuliah per semester Semester  ...
+  #3 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 8] jarak=0.372
+     rlaku. Mengabaikan proses administrasi dapat menyebabkan status akademik tidak sesuai dengan kondisi sebenarnya. 4. Evaluasi Hasil Belajar Evaluasi hasil belajar digunakan untuk mengetahui pencapaian kompetensi mahasiswa. Penilaian dapat mencakup tugas individu, proyek kelompok, kuis, praktikum, uji ...
+
+[5] Pertanyaan: Apa langkah yang harus dilakukan untuk menjaga keamanan akun akademik dari serangan phishing?
+  Kata kunci: keamanan akun, kata sandi unik, autentikasi multifaktor, OTP, phishing
+  #1 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 5] jarak=0.315
+      dan kebiasaan penggunaan perangkat yang aman dapat mengurangi risiko akses tanpa izin. 3.1 Praktik keamanan dasar ●  Gunakan kata sandi unik untuk akun akademik. ●  Aktifkan autentikasi multifaktor jika tersedia. ●  Jangan membagikan kata sandi atau kode OTP. ●  Keluar dari akun setelah menggunakan ...
+  #2 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 4] jarak=0.446
+     sebelum digunakan ●  Pastikan nama dan identitas ditulis dengan benar. ●  Periksa tanggal penerbitan dan masa berlaku jika ada. ●  Pastikan dokumen tidak terpotong atau sulit dibaca. ●  Gunakan dokumen sesuai tujuan yang dinyatakan. ●  Jangan mengubah isi dokumen resmi tanpa kewenangan. Jika terdapa ...
+  #3 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 6] jarak=0.470
+     ain situs, dan konteks permintaan sebelum menekan tautan.  BAHAN PRAKTIKUM RAG  |  PANDUAN AKADEMIK MAHASISWA Halaman 3 3.2 Data pribadi yang perlu dilindungi  Jenis data Contoh Cara perlindungan Identitas NIM, nomor identitas, alamat Bagikan hanya saat diperlukan melalui kanal resmi Autentikasi Kat ...
+
+=== LANGKAH 3: 2 pertanyaan parafrase ===
+
+[1] Pertanyaan: Jika mahasiswa perlu tidak mengikuti perkuliahan selama satu semester, bagaimana cara mengajukan izin resmi?
+  #1 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 7] jarak=0.342
+     i Tidak mengikuti perkuliahan reguler pada semester cuti 3.2 Hal yang perlu diperhatikan ●  Cuti harus memperoleh persetujuan tertulis; tidak cukup hanya dengan tidak hadir kuliah. ●  Mahasiswa perlu memeriksa dampak cuti terhadap masa studi dan jadwal kelulusan. ●  Hak akses tertentu pada sistem ak ...
+  #2 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 6] jarak=0.360
+     lam dokumen ini, mahasiswa dapat mengajukan cuti setelah menyelesaikan sekurang-kurangnya dua semester aktif. Pengajuan disampaikan sebelum batas waktu registrasi semester yang bersangkutan. Mahasiswa mengisi formulir, menyertakan alasan, melampirkan dokumen pendukung apabila diperlukan, dan mempero ...
+  #3 [01_Panduan_Akademik_Mahasiswa.pdf · chunk 5] jarak=0.395
+     h sesuai kebutuhan Konsultasi Membahas beban studi dengan dosen wali Rencana studi lebih terarah Pengajuan Mengirim perubahan melalui sistem Permohonan tercatat Konfirmasi Memeriksa status persetujuan KRS akhir tersimpan 3. Cuti Akademik dan Status Studi Cuti akademik adalah izin resmi bagi mahasisw ...
+
+[2] Pertanyaan: Bagaimana cara mengenali tautan atau pesan palsu yang berusaha mencuri informasi login mahasiswa?
+  #1 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 5] jarak=0.468
+      dan kebiasaan penggunaan perangkat yang aman dapat mengurangi risiko akses tanpa izin. 3.1 Praktik keamanan dasar ●  Gunakan kata sandi unik untuk akun akademik. ●  Aktifkan autentikasi multifaktor jika tersedia. ●  Jangan membagikan kata sandi atau kode OTP. ●  Keluar dari akun setelah menggunakan ...
+  #2 [03_Panduan_Administrasi_Etika_Digital.pdf · chunk 2] jarak=0.534
+     ng diminta perlu dipenuhi. ●  Tertib: pengajuan dilakukan melalui prosedur dan jadwal yang berlaku. ●  Aman: data pribadi tidak dibagikan melalui kanal yang tidak jelas. ●  Terdokumentasi: mahasiswa menyimpan nomor tiket atau bukti pengajuan. Komunikasi yang baik merupakan bagian penting dari layana ...
+  #3 [02_Panduan_Kehadiran_dan_Ujian.pdf · chunk 2] jarak=0.572
+     ian akhir semester. Ketentuan ini digunakan sebagai contoh pengujian pencarian informasi dan bukan kebijakan resmi universitas. Mahasiswa yang kehadirannya di bawah batas tersebut perlu menghubungi dosen pengampu dan bagian akademik untuk mengetahui tindak lanjut yang berlaku. Jumlah pertemuan Minim ...
+
+=== RINGKASAN ===
+NILAI_MANUAL = False, jadi periksa relevansi hasil di atas dengan membaca sendiri.
